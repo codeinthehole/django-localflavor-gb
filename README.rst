@@ -33,3 +33,14 @@ was separated into standalone packages in Django 1.5 to keep the framework's
 core clean.
 
 For a full list of available localflavors, see https://github.com/django/
+
+Contributing
+============
+
+To run the tests, install tox::
+
+    pip install tox
+
+Then run the tests using::
+
+    tox

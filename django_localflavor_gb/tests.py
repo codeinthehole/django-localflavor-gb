@@ -1,7 +1,6 @@
 from __future__ import unicode_literals
 
 from django.contrib.localflavor.gb.forms import GBPostcodeField
-
 from django.test import SimpleTestCase
 
 
@@ -29,4 +28,5 @@ class GBLocalFlavorTests(SimpleTestCase):
             '1NV 4L1D': ['Enter a bloody postcode!'],
         }
         kwargs = {'error_messages': {'invalid': 'Enter a bloody postcode!'}}
-        self.assertFieldOutput(GBPostcodeField, valid, invalid, field_kwargs=kwargs)
+        self.assertFieldOutput(GBPostcodeField, valid, invalid,
+                               field_kwargs=kwargs)
